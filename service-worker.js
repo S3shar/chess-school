@@ -9,7 +9,9 @@ const urlsToCache = [
   '/chess-school/images/main/Logo-Photoroom.png',
   '/chess-school/images/main/Tel.jpg',
   '/chess-school/images/main/School1.jpg',
-  '/chess-school/images/main/phon.jpg'  // Исправленное имя файла
+  '/chess-school/images/main/phon.jpg',
+  '/chess-school/images/icons/web_logo(192).jpg',
+  '/chess-school/images/icons/web_logo(512).jpg'   // Исправленное имя файла
 ];
 
 self.addEventListener('install', event => {
