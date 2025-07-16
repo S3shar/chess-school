@@ -1,10 +1,10 @@
 const CACHE_NAME = 'chess-school-v1';
 const urlsToCache = [
   '/',
-  '/index.php',
-  '/branches.php',
-  '/tournaments.php',
-  '/registration.php',
+  '/index.html',
+  '/branches.html',
+  '/tournaments.html',
+  '/registration.html',
   '/styles.css',
   '/images/main/Logo-Photoroom.png',
   '/images/main/Tel.jpg',
