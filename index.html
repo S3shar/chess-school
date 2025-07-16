@@ -9,7 +9,7 @@
         <script>
             if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/chess-school/sw.js')
+                navigator.serviceWorker.register('/chess-school/service-worker.js')
                 .then(registration => console.log('SW registered:', registration))
                 .catch(err => console.log('SW registration failed:', err));
             });
