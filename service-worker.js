@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chess-school-v2';  // Измените версию при обновлении
+const CACHE_NAME = 'chess-school';  // Измените версию при обновлении
 const urlsToCache = [
   '/chess-school/',
   '/chess-school/index.html',
@@ -9,7 +9,7 @@ const urlsToCache = [
   '/chess-school/images/main/Logo-Photoroom.png',
   '/chess-school/images/main/Tel.jpg',
   '/chess-school/images/main/School1.jpg',
-  '/chess-school/images/main/Phon.jpg'  // Исправленное имя файла
+  '/chess-school/images/main/phon.jpg'  // Исправленное имя файла
 ];
 
 self.addEventListener('install', event => {

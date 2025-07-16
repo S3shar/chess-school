@@ -17,6 +17,46 @@
         </script>
     </head>
     <body>
+        <script>
+// Проверяем поддержку PWA
+            let deferredPrompt;
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+            // Предотвращаем автоматическое отображение подсказки
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Показываем кнопку установки
+            const installButton = document.createElement('button');
+            installButton.textContent = 'Установить приложение';
+            installButton.style.position = 'fixed';
+            installButton.style.bottom = '20px';
+            installButton.style.right = '20px';
+            installButton.style.zIndex = '9999';
+            installButton.style.padding = '10px 20px';
+            installButton.style.backgroundColor = '#8d5108';
+            installButton.style.color = 'white';
+            installButton.style.border = 'none';
+            installButton.style.borderRadius = '5px';
+            
+            document.body.appendChild(installButton);
+            
+            installButton.addEventListener('click', async () => {
+                // Показываем подсказку установки
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                console.log('Пользователь принял предложение установки');
+                }
+                deferredPrompt = null;
+                document.body.removeChild(installButton);
+            });
+            });
+
+            window.addEventListener('appinstalled', () => {
+            console.log('Приложение успешно установлено');
+            });
+            </script>
         <!-- <?php
         // Подключаем общие элементы
         include 'inc/header.php';
