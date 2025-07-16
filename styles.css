@@ -1,0 +1,417 @@
+html{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.telephone{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    font-size: 0.8rem;
+}
+
+.tel{
+    height: 40px;
+    margin: auto 10px;
+}
+
+header > img{
+    height: 110px;
+    margin: 10px 90px;
+
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > ul > li> a:hover{
+    color: rgba(123, 75, 18, 0.973);
+    background-color: #ddd;
+    border-radius: 20%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li{
+    margin: 0 1rem;
+    padding: 0.2rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/main/phon.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+        
+.info-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+        
+.feature {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 40%;
+    background-color: rgba(14, 10, 4, 0.781);
+    border-radius: 10% / 50%;
+    font-family: 'Arial';
+}
+        
+.feature:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+        
+.feature-title {
+    color: rgb(211, 175, 130);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+        
+.feature-description {
+    color: rgba(255, 255, 255, 0.651);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+h1{
+    color: rgb(141, 81, 8);
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about > img{
+    height: 30%;
+    width: 30%;
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content:  center;
+    padding-top: 20px;
+    color: #ddd;
+}
+
+.footer > ul{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+
+.logo{
+    height: 50px;
+}
+
+.foot-logo{
+    height: 110px;
+}
+
+.footer > ul{
+    list-style-type: none;
+}
+
+.footer-text{
+    display: block;
+    margin: auto 0;
+    padding: 10px 10px 10px 0;
+    border-right: 1px solid rgb(192, 176, 75);
+}
+
+.footer-text > div > p, .contacts > a > p{
+    font-size: 0.9rem;
+    margin: 1px;
+}
+
+.contacts{
+    margin-top: 10px;
+}
+
+.contacts > a{
+    color: #ddd;
+    display: block;
+    padding: 0px;
+}
+
+.filials{
+    padding-top: 10px;
+}  
+
+.register-phon{
+    background: url('images/registration/Phon-register1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phon {
+    background: rgba(0 0 0 / 0.8);
+    color: #ddd;
+    width: 30%;
+    max-width: 400px;
+    padding: 30px 40px 0px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.container{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    margin: 0 30px;
+    margin-top: -5px;
+}
+
+.container > img{
+    height: 150px;
+}
+
+
+.info > label{
+    display: flex;
+    margin: 20px 0 7px 0;
+}
+
+.info > input{
+    background-color: black;
+    width: 100%;
+    height: 1.1rem;
+    border: 1px solid #ddd;
+    padding: 4px;
+    color: #ddd;
+}
+
+.info > select{
+    width: 80%;
+    margin-left: -65px;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    background-color: black;
+    color: #ddd
+}
+
+.info > input::placeholder{
+    font-size: 0.8rem;
+    color: rgba(221, 221, 221, 0.5)
+}
+
+.radio > p , .radio > ul > li{
+    display: flex;
+}
+
+.radio > ul{
+    padding: 0;
+    margin-top: 0;
+}
+
+button{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: #ddd;
+    border: 2px solid white;
+}
+
+/* Добавляем в конец файла */
+/* Стили для страницы филиалов */
+.branches-hero {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    background-image: url('images/main/phon.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.branches-card {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 50px 0;
+}
+
+.branch {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(14, 10, 4, 0.1);
+    border-radius: 5px;
+    border-left: 4px solid #8d5108;
+}
+
+.branch h2 {
+    color: rgb(141, 81, 8);
+    margin-top: 0;
+}
+
+.map-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.map-container {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для страницы турниров */
+.tournaments-hero {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    background-image: url('images/tournaments/chess-tournament-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.tournaments-card {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 50px 0;
+}
+
+.tournament {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: rgba(14, 10, 4, 0.05);
+    border-radius: 5px;
+    border-top: 3px solid rgb(141, 81, 8);
+}
+
+.tournament h2 {
+    color: rgb(141, 81, 8);
+    margin-top: 0;
+}
+
+.tournament button {
+    background-color: rgb(141, 81, 8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tournament button:hover {
+    background-color: rgb(123, 75, 18);
+}
+
+.archive-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.archive-link a {
+    color: rgb(141, 81, 8);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.rules-section {
+    padding: 50px;
+    background-color: rgba(14, 10, 4, 0.8);
+    color: white;
+}
+
+.rules-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.rules-container ul {
+    padding-left: 20px;
+}
+
+.rules-container li {
+    margin-bottom: 10px;
+}

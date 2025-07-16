@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chess Shool</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="/manifest.json">
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration => console.log('SW registered:', registration))
+                .catch(err => console.log('SW registration failed:', err));
+            });
+        }
+        </script>
+    </head>
+    <body>
+        <!-- <?php
+        // Подключаем общие элементы
+        include 'inc/header.php';
+        ?> -->
+        <header>
+            <img src="images/main/Logo-Photoroom.png" alt="ChessLogo" />
+            <nav>
+                <ul>
+                    <li><a href="#">Ошколе</a></li>
+                    <li><a href="branches.php">Филиалы</a></li>
+                    <li><a href="tournaments.php">Турниры</a></li>
+                    <li><a href="registration.php">Услуги</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+79876543210" class="telephone"><b>Тел.: +7 987 654 32 10</b></a>
+            <img class="tel" src="images/main/Tel.jpg" />
+        </header>
+        <main>
+            <section class="hero-section">
+                <!-- Затемнение фона -->
+                <div class="hero-overlay"></div>
+                
+                <!-- Карточка с информацией -->
+                <div class="info-card">
+                    <h1>Одна из лучших школ Москвы!</h1>
+                    <div class="feature">
+                        <h2 class="feature-title">ОПЫТНЫЕ ТРЕНЕРЫ</h2>
+                        <p class="feature-description">От первого разряда до международных гроссмейстеров</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h2 class="feature-title">ДОМАШНЕЕ ЗАДАНИЕ</h2>
+                        <p class="feature-description">Для закрепления материала после каждого урока</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h2 class="feature-title">КОМПЛЕКТ ЛИТЕРАТУРЫ</h2>
+                        <p class="feature-description">Можно приобрести у нас (собственное издательство)</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h2 class="feature-title">ОНЛАЙН-УРОКИ</h2>
+                        <p class="feature-description">Возможность индивидуальных дополнительных занятий</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="history">
+                    <h2>Пара слов о самой школе</h2>
+                    <p>Основанная в 2010 году группой энтузиастов во главе с международным мастером Игорем 
+                        Васильевым, наша школа прошла путь от небольшого шахматного кружка до признанного центраэ
+                        обучения с филиалами в 4 городах России.</p>
+                    <p>Наш методика ознована на фундаментальной подготовке по классической советской школе шахмат,
+                        современных технологиях обучения с использованием интерактивных платформ, индивидуальных
+                        программ для каждого ученика с учетом его уровня и целей</p>
+                    <h3>За 15 лет работы мы подготовили:</h3>
+                    <ul>
+                        <li>15 кандитатов в мастера спорта</li>
+                        <li>Более 200 разрядников</li>
+                        <li>Множество победителей региональных и всероссийских турниров</li>
+                    </ul>
+                </div>
+                <img src="images/main/School1.jpg" />
+            </section>
+        </main>
+        <?php
+        include "inc/footer.php"
+        ?>
+    </body>
+</html>
